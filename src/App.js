@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Container from '@mui/material/Container';
+import AppBar  from '@mui/material/AppBar';
+import ToolBar from '@mui/material/Toolbar';
+import Typography  from '@mui/material/Typography';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Container>
+    <AppBar position="static">
+      <ToolBar>
+        <Typography variant="he">
+          Shopping List
+        </Typography>
+      </ToolBar>
+    </AppBar>
+   </Container>
   );
 }
 
